@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #ff6f61;
+            animation: fadeIn 2s ease-in-out, pulse 1.5s infinite;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <script>
+        // Redirect after 2 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "Home.html";
+            }, 0); // You can adjust the delay here
+        }
+    </script>
+</head>
+<body>
+    <p>Please wait, sending you to the website...</p>
+</body>
+</html>
